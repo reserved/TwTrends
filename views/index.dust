@@ -1,0 +1,38 @@
+{>base/}
+
+{<metadata}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="twitter, trends, infratab">
+{/metadata}
+
+{<links}
+<link href="/css/index.css" rel="stylesheet" media="screen">
+<link href="/css/humanejs.css" rel="stylesheet" media="screen">
+<link href="/fontdef/TypoPRO-Merriweather/TypoPRO-MerriweatherSans-Regular.css" rel="stylesheet" type="text/css"/>
+<link href="/fontdef/TypoPRO-Cuprum/TypoPRO-Cuprum-Regular.css" rel="stylesheet" type="text/css"/>
+<link href="/fontdef/TypoPRO-ClearSans/TypoPRO-ClearSans-Regular.css" rel="stylesheet" type="text/css"/>
+{/links}
+
+{<domscripts}
+<script src="../js/bundle.js"></script>
+<script>var _ = require('underscore');</script>
+{/domscripts}
+
+{<title}
+{title}
+{/title}
+
+{<sidebar}
+{>sidebar/}
+{/sidebar}
+
+{<content}
+{>content/}
+{/content}
+
+{<scripts}
+<script src="../js/humane.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/backbone.js"></script>
+<script src="../js/app.js"></script>
+{/scripts}

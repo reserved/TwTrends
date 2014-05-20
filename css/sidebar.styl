@@ -1,0 +1,84 @@
+
+.sidebar
+	span(1/4)
+	display inline-block
+	min-height 600px
+	box-sizing border-box
+	background flatui-midnightblue
+	overflow-x hidden
+.country-selection
+	min-height 160px
+	padding 40px 40px
+
+	.country-first,.country-second
+		max-height 60px
+		margin 0 0 20px 0
+
+	button
+		outline none
+		width 100%
+		margin 20px 0 30px
+		border 0
+		padding 5% 
+		box-sizing border-box
+		border-radius 5px
+		cursor pointer
+
+	ul.dropdown
+		relative top -24px
+		width 100%
+		height 100%
+		min-height 10px
+		box-sizing border-box
+		background flatui-greensea
+		z-index 100
+		padding 5px 20px
+		visibility hidden
+		max-height 400px
+		opacity 0
+		overflow scroll
+		z-index 200
+		color flatui-clouds
+
+		li 
+			padding px(10)
+			border-radius px(5)
+			font-size rem(1)
+			&:hover
+				background flatui-pomegranate
+
+	.label
+		relative 0
+		font-size rem(1)
+		line-height rem(1.8)
+
+	.label:after
+		content " "
+		width 0
+		height 0
+		relative right -5% top 15px
+		border-top 8px solid flatui-clouds
+		border-left 5px solid transparent
+		border-right 5px solid transparent
+
+.tweets-list
+	h3
+		height 48px
+		width 100%
+		line-height 48px
+		text-transform uppercase
+		text-align center
+		font-size rem(1.2)
+		font-family 'TypoPRO Cuprum'
+		letter-spacing px(2)
+		background flatui-wetasphalt
+
+	.hashtag
+		font-family 'TypoPRO Cuprum'
+	ul
+		.trending-tweet
+			text-align center
+			box-sizing border-box
+			padding 5%
+			background flatui-midnightblue
+	

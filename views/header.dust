@@ -1,0 +1,7 @@
+<header>
+	<div class="logo"></div>
+	<div class="identity">
+		<div class="profile-image"><img src="{data.profile_image_url}"/></div>
+		<div class="profile-name">{data.screen_name}</div>
+	</div>
+</header>

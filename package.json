@@ -1,0 +1,32 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "supervisor -w views,routes,css  -e html,css,js,dust,styl ./bin/www"
+  },
+  "dependencies": {
+    "autoprefixer-stylus": "^0.1.0",
+    "body-parser": "~1.0.0",
+    "consolidate": "^0.10.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "dustjs-helpers": "^1.2.0",
+    "dustjs-linkedin": "^2.3.5",
+    "express": "~4.0.0",
+    "express-session": "^1.1.0",
+    "jeet": "^5.2.8",
+    "morgan": "~1.0.0",
+    "nib": "^1.0.2",
+    "static-favicon": "~1.0.0",
+    "stylus": "^0.45.0",
+    "stylus-flatuicolors": "^0.1.1",
+    "stylus-font-face": "^0.1.0",
+    "stylus-type-utils": "0.0.3",
+    "superagent": "^0.18.0",
+    "sys": "0.0.1",
+    "twitter-api": "^1.0.4",
+    "typopro": "^2.0.4",
+    "vertical-rhythm": "^0.3.3"
+  }
+}

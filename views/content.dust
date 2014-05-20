@@ -1,0 +1,29 @@
+<section class="page">
+	<section class="tweet-colors">
+		<button class="tweet-color bg-amethyst">
+		</button>
+		<button class="select-color bg-wetasphalt">
+		Add Colors
+		</button>
+	</section>
+	<section class="select-color-tool bg-turquoise">
+		<div class="context">
+			<div class="selected-color bg-amethyst"></div>
+			<label for="red_color" class="bg-midnightblue">r</label>
+			<input type="text" id="red_color" class="color bg-midnightblue">
+			<label for="green_color" class="bg-midnightblue">g</label>
+			<input type="text" id="green_color" class="color bg-midnightblue">
+			<label for="blue_color" class="bg-midnightblue">b</label>
+			<input type="text" id="blue_color" class="color bg-midnightblue">
+			<label for="hex_color" class="hex bg-midnightblue">#</label>
+			<input type="text" id="hex_color" class="hex bg-midnightblue">
+			<label class="close-color-tool bg-midnightblue">ok</label>
+		</div>
+		<button class="history bg-midnightblue">
+			History
+		</button>
+	</section>
+
+	<ul class="tweets">
+	</ul>
+</section>

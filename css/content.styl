@@ -1,0 +1,242 @@
+.mfp-content
+	background-color flatui-wetasphalt !important
+	color flatui-clouds
+	font-size rem(1.2)
+	box-shadow 0px 0px 12px 2px rgba(0,0,0,0.3)
+	border-radius 8px
+	line-height rem(1.8)
+
+
+.proceed-for-login
+	padding 10px
+	outline 0
+	border 0
+	font-size rem(1)
+	border-radius 3px
+	display block
+	margin 30px auto
+	box-shadow 0 0 4px 2px flatui-belizehole
+	width 20%
+	text-decoration none
+	&:hover
+		background-color flatui-belizehole
+.page
+	position relative
+	span(3/4)
+	height 100%
+	display inline-block
+	box-sizing border-box
+	padding 40px
+
+	.tweet-colors
+		margin 40px 0 0 0
+	
+	.tweet-color,.select-color
+		width 160px
+		height 48px
+		outline 0
+		border 0
+		border-radius 3px		
+		vertical-align top
+		display inline-block
+		margin 0 20px 20px 0
+		cursor pointer 
+
+	.select-color
+		font-size rem(1)
+		line-height rem(2.8)
+		&:after
+			font-family 'icon-font'
+			content '\e800'
+			font-size rem(1.6)
+			relative right -12px
+
+	.tweet-color
+		&:after
+			font-family 'icon-font'
+			content '\e801'
+			font-size rem(1.6)
+			relative right -48px
+			color flatui-clouds
+
+	.select-color-tool
+		absolute right 10px
+		width 300px
+		height 245px
+		border-radius 8px
+		visibility hidden
+		z-index 1000
+		box-shadow 0 0 12px 4px rgba(0,0,0,0.3)
+
+		&:after
+			width 0
+			height 0
+			content " "
+			border-bottom solid 12px flatui-turquoise
+			border-left solid 12px transparent
+			border-right solid 12px transparent
+			absolute left 142px top -12px
+
+		.context
+			padding 20px
+			box-sizing border-box
+			clearfix()
+			
+			.selected-color
+				width 100%
+				height 48px
+				border solid 4px flatui-greensea
+				box-sizing border-box
+				border-radius 5px
+				margin 0 0 20px 0
+
+			label
+				span(1/9)
+				display inline-block
+				line-height 32px
+				text-transform uppercase
+				text-align center
+				border-right solid 3px flatui-turquoise
+				color flatui-turquoise
+				box-sizing border-box
+				font-family 'TypoPRO Cuprum'
+				font-size rem(1.2)
+
+			input[type=text].color
+				span(2/9)
+				outline 0
+				margin 0
+				padding 5px
+				border 0
+				height 32px
+				border-right solid 3px flatui-turquoise
+				line-height 20px
+				display inline-block
+				vertical-align top
+				box-sizing border-box
+				color flatui-turquoise
+				font-size rem(1)
+
+				&:last-child
+					border-right solid 3px flatui-midnightblue
+			
+			label.hex 
+				span(2/9)
+				margin 10px 0 0 0
+				display inline-block
+				text-align center
+				font-family 'TypoPRO Cuprum'
+				font-size rem(1.2)
+
+			#hex_color
+				span(5/9)
+				margin 10px 0 0 0
+				height 32px
+				line-height 20px
+				outline 0
+				border 0
+				color flatui-turquoise
+				border-right solid 3px flatui-turquoise
+				padding 0 5px
+				box-sizing border-box
+				display inline-block
+				font-size rem(1)
+
+			.close-color-tool
+				span(2/9)
+				margin 10px 0 0 0
+				border 0
+				outline 0
+				padding 0
+				color flatui-turquoise
+				height 32px
+				display inline-block
+				text-align center
+				text-transform uppercase
+				font-family 'TypoPRO Cuprum'
+				font-size rem(1.2)
+				cursor pointer
+					
+		.history
+			outline 0
+			border 0
+			width 100%
+			height 64px
+			absolute bottom 0
+			border-bottom-left-radius 8px
+			border-bottom-right-radius 8px
+			color flatui-turquoise
+			font-size rem(1.2)
+
+	.tweets
+		width 100%
+		margin px(120) 0
+		font-size 0
+
+		li
+			relative 0
+			display inline-block
+			height 200px
+			font-size rem(1)
+			box-sizing border-box
+			border solid 1px flatui-clouds
+			border-radius 3px
+
+			.tweet-tip
+				margin auto
+				text-align center
+				color flatui-clouds
+				height 0 !important
+
+				.label
+					relative 0
+					background-color flatui-greensea
+					padding px(20)
+					border-radius px(8)
+					opacity 0.3		
+					z-index 300
+					whitespace no-wrap
+
+				.arrow
+					margin auto
+					width 0
+					absolute left 0 right 0
+					border-left solid 8px transparent
+					border-right solid 8px transparent
+					opacity 0.3
+					z-index 300
+
+
+			&:hover .label, &:hover .arrow
+				opacity 1
+				z-index:500
+				
+
+		
+		li.odd
+		
+			.tweet-tip
+				absolute top -10px left -300% right -300%
+				
+				.label
+					top -50px
+
+				.arrow
+					bottom 4px
+					border-top solid 8px flatui-greensea
+
+
+		li.even	
+					
+			.tweet-tip
+				absolute left -300% right -300% bottom 0
+
+				.label
+					bottom -50px
+
+				.arrow
+					top 19px
+					border-bottom solid 8px flatui-greensea
+
+
+		// 		&:after

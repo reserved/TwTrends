@@ -1,0 +1,32 @@
+{>base/}
+
+{<metadata}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="error, twitter, trends, infratab">
+{/metadata}
+
+{<links}
+<link href="/css/index.css" rel="stylesheet" media="screen">
+{/links}
+
+{<domscripts}
+{/domscripts}
+
+{<title}
+Errors found.
+{/title}
+
+{<content}
+Twitter trends has died.
+
+{message}
+<pre>
+	{#errors}
+	{.}
+	{/errors}
+</pre>
+{/content}
+
+{<scripts}
+<script type="text/javascript">console.log({error})</script>
+{/scripts}

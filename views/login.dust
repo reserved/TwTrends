@@ -1,0 +1,46 @@
+{>base/}
+
+{<metadata}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="twitter, trends, infratab">
+{/metadata}
+
+{<links}
+<link href="/css/index.css" rel="stylesheet" media="screen">
+<link href="/css/magnific-popup.css" rel="stylesheet" media="screen">
+<link href="/fontdef/TypoPRO-Merriweather/TypoPRO-MerriweatherSans-Regular.css" rel="stylesheet" type="text/css"/>
+<link href="/fontdef/TypoPRO-Cuprum/TypoPRO-Cuprum-Regular.css" rel="stylesheet" type="text/css"/>
+<link href="/fontdef/TypoPRO-ClearSans/TypoPRO-ClearSans-Regular.css" rel="stylesheet" type="text/css"/>
+{/links}
+
+{<domscripts}
+<script src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+<script>
+$(document).ready(function(){
+	$.magnificPopup.open({
+			closeOnBgClick: false,
+			showCloseBtn: false,
+		items:{
+			src: '<div class="white-popup">Heya there!<br/> Please log in with twitter, to proceed further.<a href="/app" class="proceed-for-login bg-peterriver">Proceed</a></div>',
+			type: 'inline',
+		}
+	});
+});
+</script>
+{/domscripts}
+
+{<title}
+{title}
+{/title}
+
+{<sidebar}
+{>sidebar/}
+{/sidebar}
+
+{<content}
+{>content/}
+{/content}
+
+{<scripts}
+{/scripts}
